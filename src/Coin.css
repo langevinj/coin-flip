@@ -1,0 +1,11 @@
+.Coin-image {
+    width : 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
