@@ -22,12 +22,10 @@ function Coin(){
         });
     }
 
-    
-
     if(face === "heads"){
-        CoinDisplay = (<div className="Coin-image"><img src={headsImg}></img></div>)
+        CoinDisplay = (<div className="Coin-image" data-testid="Coin-image"><img src={headsImg}></img></div>)
     } else if (face === "tails"){
-        CoinDisplay = (<div className="Coin-image"><img src={tailsImg}></img></div>)
+        CoinDisplay = (<div className="Coin-image" data-testid="Coin-image"><img src={tailsImg}></img></div>)
     }
 
 
@@ -36,7 +34,7 @@ function Coin(){
             <h2>Let's flip a coin!</h2>
             {CoinDisplay}
             <div>
-                <button className="flipme" onClick={flipCoin}>Flip Meee</button>
+                <button className="flipme" onClick={flipCoin} data-testid="flipme">Flip Meee</button>
             </div>
             
             {CountDisplay}
